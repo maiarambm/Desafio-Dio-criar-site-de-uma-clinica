@@ -1,0 +1,344 @@
+<!DOCTYPE html> 
+
+<html lang="pt-br"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Template - Utilizar como modelo</title> 
+
+    <link rel="stylesheet" href="base.css"> 
+
+    <style> 
+
+        html, body { 
+            margin: 0; 
+        } 
+
+        body { 
+            background-color: #f1f1f1; 
+            display: flex; 
+            justify-content: center; 
+        } 
+
+        table {
+            -webkit-box-shadow: 13px 13px 18px -4px rgba(0,0,0,0.63);
+            box-shadow: 13px 13px 18px -4px rgba(0,0,0,0.63);
+            border: solid 1px gray
+
+        }
+        table thead th {
+            border: solid 1px black ;
+            background-color: aquamarine;
+            color: rgb(31, 110, 76);
+        }
+
+        table tfoot td{
+            background-color: lightgrey;
+        }
+
+
+        table tbody tr:nth-child(even) td {
+            background-color: lightpink;
+        }
+
+        table tbody tr:hover td{ 
+            background-color: darkmagenta; 
+            cursor: pointer;
+        } 
+
+
+        
+        .wrapper { 
+            width: 1200px; 
+            display: flex; 
+            margin: 0 auto; 
+            background-color: aquamarine; 
+        } 
+
+        .main { 
+            display: flex; 
+            flex-flow: column; 
+            width: 85%; 
+        } 
+
+        .menu { 
+            width: 15%; 
+            background-color: #81D8D0; 
+            padding: 10px 20px 0px; 
+        } 
+
+        .header { 
+            background-color: #81D8D0; 
+            min-height: 150px; 
+        } 
+
+        .content { 
+            background-color: white; 
+            min-height: 300px; 
+            padding: 20px; 
+        } 
+
+        .footer { 
+            background-color: #81D8D0; 
+            min-height: 150px; 
+        } 
+
+        
+
+
+    </style> 
+
+</head> 
+
+<body> 
+
+    <div class="wrapper"> 
+
+        <div class="menu lateral"> 
+            <!-- Aqui vai o seu menu --> 
+            
+            <ul> 
+
+                <li><a href="template.html">Página Principal </a></li> 
+                <li><a href="Sobre a clínica.html">Sobre a clínica </a></li> 
+                <li><a href="horario de atendimento.html">Horário de Atendimento e Preços</a></li> 
+                <li><a href="Endereço.html">Contato e Endereço</a></li> 
+
+            </ul> 
+
+        </div> 
+
+ 
+ 
+
+        <div class="main"> 
+
+            <div class="header"> 
+                <!-- Aqui vai o seu header --> 
+                <H1> <font size="100">Clinica veterinaria</font> </H1>
+                <img title="cabeçalho" alt="descrição do logotipo" src="foto gato e cão.jpg" width="1000"><br> 
+                
+                
+            </div> 
+
+     
+
+            <div class="content">                 
+                <!-- Aqui vai o seu conteúdo --> 
+                              
+               <h1>Horário de atendimento</h1>
+               
+                <table sumary="leitor de tela vai der o descritivo do que ela se refere" border="1" width="250" cellspacing="0" cellpadding="5" align="center"> 
+                    <caption> Tabela com os horários de atendimento</caption>
+                    <thead>
+                   <tr>
+                    <th title="Serviço">Serviço</th>
+                    <th title="">Segunda a Sexta</th>
+                    <th title="">Sábado e Domingo</th>
+                    <th title="">Feriados</th>
+                   </tr>
+                   </thead>
+
+                   <tbody>
+                        <tr> 
+                            <td>Pet shop Banho e tosa</td> 
+                            <td> 8:00 às 17:00 </td> 
+                            <td>8:00 às 12:00</td> 
+                            <td> -</td> 
+                        </tr> 
+                
+                        <tr> 
+                            <td>CONSULTA</td> 
+                            <td> 8:00 às 21:00 </td> 
+                            <td>8:00 às 13:00</td> 
+                            <td> -</td> 
+                        </tr> 
+
+                        <tr> 
+                            <td>CONSULTA de PLANTÃO </td> 
+                            <td> 21:00 às 8:00 </td> 
+                            <td>-</td> 
+                            <td> 8:00 às 12:00</td> 
+                        </tr> 
+
+                        <tr> 
+                            <td>CONSULTA DE ESPECIALISTA </td> 
+                            <td> 08h - 19h </td> 
+                            <td>8:00 às 12:00</td> 
+                            <td> -</td> 
+                        </tr> 
+                    </tbody>        
+                                     
+               </table> 
+
+               <h1>Valores</h1>
+
+               <h2>Preço do Banho e tosa</h2>
+               <table sumary="leitor de tela vai der o descritivo do que ela se refere" border="1" width="500" cellspacing="0" cellpadding="5" align="center"> 
+                    <caption> Tabela com os Preço do Banho e tosa</caption>
+
+                    <thead>
+                        <tr>
+                            <th title="">Serviço Banho e Tosa</th>
+                            <th title="">Cães até 10kg:</th>
+                            <th title="">Cães de 10,1 até 20 Kg</th>
+                            <th title="">Cães 20,1 até 40 Kg </th>
+                            <th title="">Cães acima de 40,1 Kg</th>
+                        </tr>
+                    </thead>
+        
+
+                    <tbody>
+                            <tr> 
+                                <td>Apenas o banho:</td> 
+                                <td> R$ 30,00</td> 
+                                <td>R$ 40,00</td> 
+                                <td>R$ 50,00</td> 
+                                <td>R$ 60,00</td>
+                            </tr> 
+
+                            <tr>
+                                <td>A Tosa</td>
+                                <td>R$ 30,00</td>
+                                <td>R$ 40,00</td>
+                                <td>R$ 50,00</td>
+                                <td>R$ 60,00</td>
+                            </tr>
+                    
+
+                            <tr>
+                                <td>Total</td>
+                                <td>R$ 60,00</td>
+                                <td>R$ 80,00</td>
+                                <td>R$ 100,00</td>
+                                <td>R$ 120,00</td>
+                            </tr>
+                    </tbody>        
+                         
+               </table> 
+
+               <H2>Vacinas</H2>
+               <table sumary="leitor de tela vai der o descritivo do que ela se refere" border="1" width="200" cellspacing="0" cellpadding="5" align="center">
+                    <caption> Tabela com os Preços das Vacinas</caption>   
+
+                    <thead>
+                        <tr>
+                            <th title="">Vacinas</th>
+                            <th title="">Preço</th>
+                            
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>V8</td>
+                            <td>R$ 90,00</td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td>V10</td>
+                            <td>R$ 110,00</td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td>Antirrábica</td>
+                            <td>R$ 80,00</td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td>Gripe Canina</td>
+                            <td>R$ 100,00</td>
+                            
+                        </tr>
+
+
+                    </tbody>
+
+
+               </table>
+
+
+               <H2>Consultas</H2>
+               <table sumary="leitor de tela vai der o descritivo do que ela se refere" border="1" width="500" cellspacing="0" cellpadding="5" align="center">
+                    <caption> Tabela com os Preços das Consultas</caption>
+
+                   <thead>
+                    <tr>
+                        <th title="">Consulta </th>
+                        <th title="">Das 8 hrs até às 18 hrs</th>
+                        <th title="">Após às 18 hrs</th>
+                        
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Consulta convencional</td>
+                            <td>R$ 60,00</td>
+                            <td>R$ 80,00</td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td>Consulta Especialista </td>
+                            <td>R$ 120,00</td>
+                            <td>R$ 190,00</td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td>Total</td>
+                            <td>R$ 120,00</td>
+                            <td>R$ 200,00</td>
+                            
+                        </tr>
+                    </tbody>                   
+
+               </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div> 
+
+     
+
+            <div class="footer">                 
+                <!-- Aqui vai o seu rodapé --> 
+                <img title="cabeçalho" alt="descrição do rodapé, desenho de vários cachorros" src="imagem pet roda pé 3.jpg" width="1000"><br>
+                
+            </div> 
+
+        </div> 
+
+    </div> 
+
+</body> 
+
+</html> 
+
+ 

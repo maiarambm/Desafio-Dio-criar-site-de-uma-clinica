@@ -1,0 +1,161 @@
+<!DOCTYPE html> 
+
+<html lang="pt-br"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Template - Utilizar como modelo</title> 
+
+    <link rel="stylesheet" href="base.css"> 
+
+    <style> 
+
+        html, body { 
+            margin: 0; 
+        } 
+
+        body { 
+            background-color: #f1f1f1; 
+            display: flex; 
+            justify-content: center; 
+        } 
+
+        table {
+            -webkit-box-shadow: 13px 13px 18px -4px rgba(0,0,0,0.63);
+            box-shadow: 13px 13px 18px -4px rgba(0,0,0,0.63);
+            border: solid 1px gray
+
+        }
+        table thead th {
+            border: solid 1px black ;
+            background-color: aquamarine;
+            color: rgb(31, 110, 76);
+        }
+
+        table tfoot td{
+            background-color: lightgrey;
+        }
+
+
+        table tbody tr:nth-child(even) td {
+            background-color: lightpink;
+        }
+
+        table tbody tr:hover td{ 
+            background-color: darkmagenta; 
+            cursor: pointer;
+        } 
+
+
+        
+        .wrapper { 
+            width: 1200px; 
+            display: flex; 
+            margin: 0 auto; 
+            background-color: aquamarine; 
+        } 
+
+        .main { 
+            display: flex; 
+            flex-flow: column; 
+            width: 85%; 
+        } 
+
+        .menu { 
+            width: 15%; 
+            background-color: #81D8D0; 
+            padding: 10px 20px 0px; 
+        } 
+
+        .header { 
+            background-color: #81D8D0; 
+            min-height: 150px; 
+        } 
+
+        .content { 
+            background-color: white; 
+            min-height: 300px; 
+            padding: 20px; 
+        } 
+
+        .footer { 
+            background-color: #81D8D0; 
+            min-height: 150px; 
+        } 
+      
+
+    </style> 
+
+    
+</head> 
+
+
+<body> 
+
+    <div class="wrapper"> 
+
+        <div class="menu lateral"> 
+            <!-- Aqui vai o seu menu -->             
+            <ul> 
+
+                <li><a href="template.html">Página Principal </a></li> 
+                <li><a href="Sobre a clínica.html">Sobre a clínica </a></li> 
+                <li><a href="horario de atendimento.html">Horário de Atendimento e Preços</a></li> 
+                <li><a href="Endereço.html">Contato e Endereço</a></li> 
+
+            </ul> 
+
+        </div> 
+
+ 
+ 
+
+        <div class="main"> 
+
+            <div class="header"> 
+                <!-- Aqui vai o seu header --> 
+                <H1> <font size="100">Clinica veterinaria</font> </H1>
+                <img title="cabeçalho" alt="descrição do logotipo" src="imagem veterinario 2.png" width="1000"><br> 
+                
+                
+
+            </div> 
+
+     
+
+            <div class="content">              
+                <!-- Aqui vai o seu conteúdo --> 
+                
+                <h1> Um pouco sobre nós </h1>
+                <br>O amor aos animais e a incessante busca pelo que existe de melhor e mais moderno na medicina veterinária é o que nos guia para oferecer a mais completa estrutura hospitalar. As diversas especialidades, oferecem aos cães, gatos e aos nossos clientes/tutores, conforto, segurança e a certeza de que realmente tudo o que existe de melhor em medicina veterinária estará ao seu alcance. 
+                <br>
+                <p></p>Confira mais sobre todos os serviços que oferecemos aos seus queridos pet.
+                
+
+
+            </div> 
+
+     
+
+            <div class="footer">         
+                <!-- Aqui vai o seu rodapé --> 
+                <img title="cabeçalho" alt="descrição do rodapé, desenho de vários cachorros" src="imagem pet roda pé 3.jpg" width="1000"><br>
+                
+
+
+
+            </div> 
+
+        </div> 
+
+    </div> 
+
+</body> 
+
+</html> 
+
+ 

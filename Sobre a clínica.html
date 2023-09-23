@@ -1,0 +1,181 @@
+<!DOCTYPE html> 
+
+<html lang="pt-br"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Template - Utilizar como modelo</title> 
+
+    <link rel="stylesheet" href="base.css"> 
+
+    <style> 
+
+        html, body { 
+            margin: 0; 
+        } 
+
+        body { 
+            background-color: #f1f1f1; 
+            display: flex; 
+            justify-content: center; 
+        } 
+
+        table {
+            -webkit-box-shadow: 13px 13px 18px -4px rgba(0,0,0,0.63);
+            box-shadow: 13px 13px 18px -4px rgba(0,0,0,0.63);
+            border: solid 1px gray
+
+        }
+        table thead th {
+            border: solid 1px black ;
+            background-color: aquamarine;
+            color: rgb(31, 110, 76);
+        }
+
+        table tfoot td{
+            background-color: lightgrey;
+        }
+
+
+        table tbody tr:nth-child(even) td {
+            background-color: lightpink;
+        }
+
+        table tbody tr:hover td{ 
+            background-color: darkmagenta; 
+            cursor: pointer;
+        } 
+
+
+        
+        .wrapper { 
+            width: 1200px; 
+            display: flex; 
+            margin: 0 auto; 
+            background-color: aquamarine; 
+        } 
+
+        .main { 
+            display: flex; 
+            flex-flow: column; 
+            width: 85%; 
+        } 
+
+        .menu { 
+            width: 15%; 
+            background-color: #81D8D0; 
+            padding: 10px 20px 0px; 
+        } 
+
+        .header { 
+            background-color: #81D8D0; 
+            min-height: 150px; 
+        } 
+
+        .content { 
+            background-color: white; 
+            min-height: 300px; 
+            padding: 20px; 
+        } 
+
+        .footer { 
+            background-color: #81D8D0; 
+            min-height: 150px; 
+        } 
+
+        
+
+
+    </style> 
+
+</head> 
+
+<body> 
+
+    <div class="wrapper"> 
+
+        <div class="menu lateral"> 
+            <!-- Aqui vai o seu menu --> 
+          
+            <ul> 
+
+                <li><a href="template.html">Página Principal </a></li> 
+                <li><a href="Sobre a clínica.html">Sobre a clínica </a></li> 
+                <li><a href="horario de atendimento.html">Horário de Atendimento e Preços</a></li> 
+                <li><a href="Endereço.html">Contato e Endereço</a></li> 
+
+            </ul> 
+
+        </div> 
+
+ 
+ 
+
+        <div class="main"> 
+
+            <div class="header"> 
+                <H1> <font size="100">Clinica veterinaria</font> </H1>
+                <img title="cabeçalho" alt="descrição do logotipo" src="imagem cabeçalho 1.jpg" width="1000"><br> 
+                <!-- Aqui vai o seu header --> 
+
+
+            </div> 
+
+     
+
+            <div class="content">                 
+                <!-- Aqui vai o seu conteúdo --> 
+                <h1>Quem somos</h1>
+
+                <h2>Sobre a rede de hospitais Pet </h2> <br> 
+
+                O Hospital Veterinário Pet foi fundado em 1991 na cidade de São Paulo e desde então se destaca por oferecer a melhor medicina veterinária para cães e gatos. Nosso time de veterinários está entre os mais conceituados do país 
+                <br>
+                O Pet possui centros laboratoriais e de diagnóstico. Dispõe de UTIs (unidades de tratamentos intensivos) e cirurgias de alta complexidade, que, em muitos casos, são as mesmas de hospitais humanos, assim como suas instalações e especialidades como oftalmologia, dermatologia, endocrinologia, neurologia, cardiologia, oncologia, intensivistas, entre outras especialidades. 
+                <br>
+                <h2>Sonho: </h2>
+                <br>
+                Oferecer medicina de excelência para cães e gatos e carinho aos tutores, disseminando conhecimento. 
+                <br>
+                <h2>Como fazemos:</h2>
+                <br>
+                Cultivamos um time altamente qualificado, focado nos valores, incentivado a evoluir. 
+
+                <h2>Valores: </h2>
+                <ol>
+                    <li>Paixão: pelos animais. </li>
+                    <li>Segurança: em todos os aspectos e acima de tudo. </li>
+                    <li>Consideração: pelas pessoas tratando-as como esperam ser tratadas. </li>
+                    <li>Integridade: ao cumprir nossas obrigações com transparência</li>
+                    <li>Inovação: sempre um passo à frente.</li>
+                    <li>Comunicação: direta e aberta com todos: clientes e colaboradores, sejam eles superiores ou pares.</li>
+                    <li>Exemplo: como eixo da liderança. </li>
+                </ol>
+               
+
+            </div> 
+
+     
+
+            <div class="footer">                
+                <!-- Aqui vai o seu rodapé --> 
+                <img title="cabeçalho" alt="descrição do rodapé, desenho de vários cachorros" src="imagem pet roda pé 3.jpg" width="1000"><br>
+                
+
+
+
+            </div> 
+
+        </div> 
+
+    </div> 
+
+</body> 
+
+</html> 
+
+ 
